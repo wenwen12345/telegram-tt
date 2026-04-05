@@ -257,6 +257,9 @@ const SettingsHeader: FC<OwnProps> = ({
       case SettingsScreens.Passkeys:
         return <h3>{lang('SettingsPasskeyTitle')}</h3>;
 
+      case SettingsScreens.SessionImportExport:
+        return <h3>{lang('SettingsSessionImportExport')}</h3>;
+
       default:
         return (
           <div className="settings-main-header">

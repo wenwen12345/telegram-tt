@@ -35,12 +35,13 @@ process.env.BASE_URL = process.env.BASE_URL || PRODUCTION_URL;
 
 const {
   BASE_URL,
+  API_BASE_URL = '.web.telegram.org',
   APP_TITLE = DEFAULT_APP_TITLE,
 } = process.env;
 
 const CSP = `
   default-src 'self';
-  connect-src 'self' wss://*.web.telegram.org blob: http: https: ${APP_ENV === 'development' ? 'wss: ipc:' : ''};
+  connect-src 'self' wss://*${API_BASE_URL} blob: http: https: ${APP_ENV === 'development' ? 'wss: ipc:' : ''};
   script-src 'self' 'wasm-unsafe-eval' https://t.me/_websync_ https://telegram.me/_websync_;
   style-src 'self' 'unsafe-inline';
   img-src 'self' data: blob: https://ss3.4sqi.net/img/categories_v2/;
@@ -230,6 +231,7 @@ export default function createConfig(
         // eslint-disable-next-line no-null/no-null
         TEST_SESSION: null,
         BASE_URL,
+        API_BASE_URL,
       }),
       // Updates each dev re-build to provide current git branch or commit hash
       new DefinePlugin({

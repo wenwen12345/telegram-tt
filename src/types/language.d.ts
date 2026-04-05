@@ -2052,6 +2052,17 @@ export interface LangPair {
   'DateCopiedToast': undefined;
   'ReminderSetToast': undefined;
   'NoForwardsRequestReject': undefined;
+  'SettingsSessionImportExport': undefined;
+  'SettingsSessionExport': undefined;
+  'SettingsSessionImport': undefined;
+  'SettingsSessionExportDescription': undefined;
+  'SettingsSessionImportDescription': undefined;
+  'SettingsSessionExportAll': undefined;
+  'SettingsSessionExportSuccess': undefined;
+  'SettingsSessionImportSuccess': undefined;
+  'SettingsSessionImportError': undefined;
+  'SettingsSessionImportConfirmTitle': undefined;
+  'SettingsSessionExportSelectAll': undefined;
   'NoForwardsRequestAccept': undefined;
 }
 
@@ -3609,6 +3620,12 @@ export interface LangPairWithVariables<V = LangVariable> {
   };
   'RankEditText': {
     'user': V;
+  };
+  'SettingsSessionImportConfirmText': {
+    'count': V;
+  };
+  'SettingsSessionAccountsTitle': {
+    'count': V;
   };
 }
 

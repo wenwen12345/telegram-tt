@@ -38,6 +38,7 @@ import SettingsPrivacyBlockedUsers from './SettingsPrivacyBlockedUsers';
 import SettingsPrivacyVisibility from './SettingsPrivacyVisibility';
 import SettingsPrivacyVisibilityExceptionList from './SettingsPrivacyVisibilityExceptionList';
 import SettingsQuickReaction from './SettingsQuickReaction';
+import SettingsSessionImportExport from './SettingsSessionImportExport';
 import SettingsStickers from './SettingsStickers';
 import SettingsTwoFa from './twoFa/SettingsTwoFa';
 
@@ -491,6 +492,14 @@ const Settings: FC<OwnProps> = ({
       case SettingsScreens.Passkeys:
         return (
           <SettingsPasskeys
+            isActive={isScreenActive}
+            onReset={handleReset}
+          />
+        );
+
+      case SettingsScreens.SessionImportExport:
+        return (
+          <SettingsSessionImportExport
             isActive={isScreenActive}
             onReset={handleReset}
           />

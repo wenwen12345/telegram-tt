@@ -1,0 +1,8 @@
+error: rustc 1.91.1 is not supported by the following packages:
+  telegram_air@2.9.5 requires rustc 1.93
+  telegram_air@2.9.5 requires rustc 1.93
+  telegram_air@2.9.5 requires rustc 1.93
+  telegram_air@2.9.5 requires rustc 1.93
+  telegram_air@2.9.5 requires rustc 1.93
+  telegram_air@2.9.5 requires rustc 1.93
+

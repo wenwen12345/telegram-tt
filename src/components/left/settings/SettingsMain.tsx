@@ -155,6 +155,13 @@ const SettingsMain: FC<OwnProps & StateProps> = ({
           {sessionCount > 0 && (<span className="settings-item__current-value">{sessionCount}</span>)}
         </ListItem>
         <ListItem
+          icon="key"
+          narrow
+          onClick={() => openSettingsScreen({ screen: SettingsScreens.SessionImportExport })}
+        >
+          {lang('SettingsSessionImportExport')}
+        </ListItem>
+        <ListItem
           icon="language"
           narrow
 

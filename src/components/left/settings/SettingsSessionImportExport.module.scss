@@ -1,0 +1,42 @@
+.accountList {
+  margin-bottom: 0.5rem;
+}
+
+.selectAllRow {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--color-borders);
+  margin-bottom: 0.25rem;
+}
+
+.accountRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.125rem 0;
+}
+
+.accountPhone {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  margin-inline-start: 0.5rem;
+  flex-shrink: 0;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.resultMsg {
+  p {
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+}
+
+.successMsg {
+  color: var(--color-green);
+}
+
+.errorMsg {
+  color: var(--color-error);
+}

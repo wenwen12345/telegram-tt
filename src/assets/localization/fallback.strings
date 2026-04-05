@@ -2798,4 +2798,17 @@
 "DateCopiedToast" = "Date copied to clipboard";
 "ReminderSetToast" = "You set up a reminder in **Saved Messages**";
 "NoForwardsRequestReject" = "Reject";
+"SettingsSessionImportExport" = "Session Import/Export";
+"SettingsSessionExport" = "Export Sessions";
+"SettingsSessionImport" = "Import Sessions";
+"SettingsSessionExportDescription" = "Export your current login sessions to a file for backup or transfer to another device.";
+"SettingsSessionImportDescription" = "Import previously exported login sessions.";
+"SettingsSessionExportAll" = "Export All Accounts";
+"SettingsSessionExportSuccess" = "Sessions exported successfully";
+"SettingsSessionImportSuccess" = "Sessions imported successfully";
+"SettingsSessionImportError" = "Failed to import sessions. Invalid file format.";
+"SettingsSessionImportConfirmTitle" = "Import Sessions";
+"SettingsSessionImportConfirmText" = "This will import {count} account session(s). Existing sessions for the same accounts will be overwritten. Continue?";
+"SettingsSessionAccountsTitle" = "Accounts ({count})";
+"SettingsSessionExportSelectAll" = "Select All";
 "NoForwardsRequestAccept" = "Accept";
