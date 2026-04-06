@@ -1,0 +1,92 @@
+#LeftColumn-main {
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  background: var(--color-background);
+
+  > .Transition {
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .ChatFolders {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .tabs-placeholder {
+      height: 2.625rem;
+      /* stylelint-disable-next-line plugin/no-low-performance-animation-properties */
+      transition: height 150ms ease;
+
+      &:not(.open) {
+        height: 0;
+      }
+    }
+
+    .SquareTabList {
+      z-index: 1;
+
+      justify-content: flex-start;
+
+      border-bottom: 1px solid var(--color-borders);
+
+      opacity: 1;
+      box-shadow: none;
+
+      transition: opacity var(--layer-transition), box-shadow 0.2s, border-color 0.2s;
+
+      &.scrolled {
+        border-bottom-color: transparent;
+        box-shadow: 0 2px 2px var(--color-light-shadow);
+      }
+    }
+
+    &--tabs-hidden .SquareTabList {
+      pointer-events: none;
+      opacity: 0.25;
+    }
+
+    &--tabs-sidebar-shown .chat-list {
+      padding-top: 0;
+    }
+
+    .Tab {
+      flex: 0 0 auto;
+    }
+
+    > .Transition {
+      overflow: hidden;
+      flex: 1;
+    }
+  }
+
+  .RecentContacts,
+  .LeftSearch,
+  .search-content {
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  .btn-update {
+    position: absolute;
+    z-index: var(--z-chat-float-button);
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin: 0 auto;
+
+    white-space: nowrap;
+
+    &.opacity-transition {
+      transition: background-color 0.2s, color 0.2s, opacity 0.15s ease;
+    }
+  }
+}
