@@ -13,6 +13,7 @@
     "build:staging": "cross-env APP_ENV=staging bun run build:dev",
     "build:mocked": "cross-env APP_ENV=test APP_MOCKED_CLIENT=1 bun run build:dev",
     "build:production": "vite build && bash ./deploy/copy_to_dist.sh",
+    "build:entrypt": "bun build:production && bun encrypt:dist",
     "encrypt:dist": "bun encrypt-dist.js",
     "web:release:production": "bun install && bun run build:production && git add -A && git commit -a -m '[Build]' --no-verify && git push",
     "tauri": "tauri",
